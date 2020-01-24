@@ -1615,6 +1615,8 @@ wiz_map_levltyp(VOID_ARGS)
 STATIC_PTR int
 wiz_save_monsters(VOID_ARGS) /* Save a csv file for monsters */
 {
+// TODO FIXME for unix
+#if 0
 	if (wizard) 
 	{
 		pline("Starting writing monsters.csv...");
@@ -1752,6 +1754,7 @@ wiz_save_monsters(VOID_ARGS) /* Save a csv file for monsters */
 		pline("Done!");
 	}
 	else
+#endif
 		pline(unavailcmd, visctrl((int)cmd_from_func(wiz_save_monsters)));
 	return 0;
 }
