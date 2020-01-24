@@ -439,7 +439,7 @@ struct objclass {
 
 
 	char  oc_class; /* object class (enum obj_class_types) */
-    schar oc_delay; /* delay when using such an object */
+    signed int oc_delay; /* delay when using such an object, increasing from schar for heavy crossbow */
     uchar oc_color; /* color of the object */
 
     short oc_prob;            /* probability, used in mkobj() */

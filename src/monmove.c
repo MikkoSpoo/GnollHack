@@ -6,6 +6,9 @@
 #include "hack.h"
 #include "mfndpos.h"
 #include "artifact.h"
+#ifndef SHRT_MAX
+#include <limits.h>
+#endif
 
 extern boolean notonhead;
 

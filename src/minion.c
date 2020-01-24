@@ -522,9 +522,7 @@ boolean talk;
 #define Athome (Inhell && (mtmp->cham == NON_PM))
 
 /* returns 1 if it won't attack. */
-int
-demon_talk(mtmp)
-register struct monst *mtmp;
+int demon_talk(struct monst *mtmp)
 {
     long cash, demand, offer;
 
